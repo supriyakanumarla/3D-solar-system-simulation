@@ -30,7 +30,7 @@ Responsive design for various screen sizes.
 Specialties: Each planet highlights a unique trait (e.g., "Largest planet" for Jupiter, "Known for its rings" for Saturn).
 
 Live Link
-This project is deployed and accessible live at:https://your-project-name.vercel.app(Replace your-project-name with the actual URL provided by Vercel or Netlify after deployment. Update this link in your submission.)
+This project is deployed and accessible live at:https://3-d-solar-system-simulation-swart.vercel.app/
 Prerequisites
 To run this project locally, ensure you have the following installed:
 
@@ -43,14 +43,14 @@ Installation
 
 Clone the Repository:
 
-Download or clone this project to your local machine:git clone https://github.com/your-username/solar-system.git
+Download or clone this project to your local machine:git clone https://github.com/supriyakanumarla/3D-solar-system-simulation.git
 
-(Replace your-username and solar-system with your GitHub details if hosted there.)
+(Use the URL above, which reflects your GitHub repository.)
 
 
 Navigate to the Project Directory:
 
-Open a terminal and cd into the project folder:cd solar-system
+Open a terminal and cd into the project folder:cd 3D-solar-system-simulation
 
 
 
@@ -102,26 +102,25 @@ Toggle Pause/Resume and switch themes using the buttons.
 
 
 Deployment
-This project is deployed using Vercel (instructions also apply to Netlify):
+This project is deployed using Vercel:
 
 Install Vercel CLI:
 Run npm install -g vercel in your terminal.
 
 
 Deploy:
-Navigate to your project folder: cd solar-system.
+Navigate to your project folder: cd 3D-solar-system-simulation.
 Run vercel and follow the prompts to log in and deploy.
-Note the live URL provided (e.g., your-project-name.vercel.app).
+Note the live URL provided (e.g., https://3-d-solar-system-simulation-swart.vercel.app/).
 
 
 Alternative (Netlify):
 Push to GitHub, log into netlify.com, connect your repo, and deploy with the publish directory set to ..
 
 
-Update README: Replace the Live Link with your deployed URL.
 
 Project Structure
-solar-system/
+3D-solar-system-simulation/
 ├── index.html         # Main HTML file with canvas and UI
 ├── style.css          # CSS for styling the UI and responsiveness
 ├── script.js          # Three.js logic for 3D rendering and interactivity
@@ -182,11 +181,10 @@ Optimize performance for larger starfields.
 
 Contributing
 Feel free to fork this repository, make improvements, and submit pull requests. Suggestions for enhancements are welcome!
-
 Acknowledgments
 
 Three.js community for the library and examples.
 Texture assets sourced from public domain or created for this project.
 
 
-Last Updated: July 21, 2025
+Last Updated: July 23, 2025
