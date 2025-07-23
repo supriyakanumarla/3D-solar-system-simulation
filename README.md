@@ -118,27 +118,6 @@ Alternative (Netlify):
 Push to GitHub, log into netlify.com, connect your repo, and deploy with the publish directory set to ..
 
 
-
-Project Structure
-3D-solar-system-simulation/
-├── index.html         # Main HTML file with canvas and UI
-├── style.css          # CSS for styling the UI and responsiveness
-├── script.js          # Three.js logic for 3D rendering and interactivity
-├── js/                # JavaScript dependencies
-│   ├── three.module.js
-│   └── OrbitControls.js
-├── textures/          # Image assets for planets and background
-│   ├── sun.jpg
-│   ├── mercury.jpg
-│   ├── venus.jpg
-│   ├── earth.jpg
-│   ├── mars.jpg
-│   ├── jupiter.jpg
-│   ├── saturn.jpg
-│   ├── uranus.jpg
-│   ├── neptune.jpg
-│   └── starfield.jpg
-
 Usage Instructions
 
 Interacting with Planets:
