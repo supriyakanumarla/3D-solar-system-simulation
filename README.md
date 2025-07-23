@@ -1,64 +1,192 @@
-Solar System 3D Simulation
-📄 Description
-This is a 3D simulation of the solar system built with Three.js. It shows the Sun at the center, with all 8 planets orbiting around it, rendered with realistic textures and 3D orbital movement. 
+Solar System Simulation
+Welcome to the Solar System Simulation project! This interactive 3D visualization showcases the planets of our solar system, complete with orbital paths, customizable controls, and an engaging user interface. Built using Three.js, this project is designed for educational purposes and as a demonstration of web-based 3D graphics.
+Project Overview
+This project creates a dynamic 3D model of the solar system, featuring:
 
-The project includes:
+Planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn (with rings), Uranus, and Neptune, each with unique textures and sizes.
+Sun: A central light source casting shadows.
+Orbit Paths: Dashed lines representing planetary orbits.
+Interactivity: Click-to-focus functionality, orbit controls, and a tooltip system.
+Controls: Adjustable speed and inclination sliders for each planet, plus Pause/Resume and Theme Toggle buttons.
+Info Panel: Displays planet details (distance, size, and specialties) upon clicking.
 
-1. Realistic Sun and planet textures
-2. Dashed orbit lines to visualize planetary orbits
-3. Starfield background
-4. Adjustable orbital speeds using sliders
-5. Pause/Resume animation feature
-6. Hover tooltips displaying each planet’s name
-7. Dark/Light theme toggle
-8. Fully responsive design for modern browsers
+The simulation is hosted live for easy access—see the Live Link section below.
+Features
 
-🚀 Features
-✅ Sun with realistic texture
-✅ 8 textured planets revolving in elliptical 3D orbits
-✅ Starfield space background
-✅ Realistic lighting and shading
-✅ User-controlled speed sliders for each planet
-✅ Orbit path visualization with dashed lines
-✅ Pause/Resume button
-✅ Dark/Light mode toggle
-✅ Tooltips on hover showing planet names
-✅ Fully responsive to browser resize
+3D Visualization: Planets rotate around the Sun with realistic scaling and textures.
+Customizable Orbits: Adjust each planet's speed and inclination using sliders.
+User Interface:
+Pause/Resume Button: Toggles the animation.
+Theme Toggle Button: Switches between dark and light modes.
+Info Panel: Shows planet name, description, distance (in AU), size (in units), and specialty when clicked.
 
-📂 How to run
-Download or extract the project folder.
 
-Ensure the following structure is correct:
+Bonus Features:
+Twinkling starfield background.
+Smooth camera transitions when focusing on planets or the Sun.
+Responsive design for various screen sizes.
 
+
+Specialties: Each planet highlights a unique trait (e.g., "Largest planet" for Jupiter, "Known for its rings" for Saturn).
+
+Live Link
+This project is deployed and accessible live at:https://your-project-name.vercel.app(Replace your-project-name with the actual URL provided by Vercel or Netlify after deployment. Update this link in your submission.)
+Prerequisites
+To run this project locally, ensure you have the following installed:
+
+Node.js: Version 14.x or higher (for serving the site or installing dependencies if needed).
+A Web Browser: Chrome, Firefox, or Edge (recommended for WebGL support).
+Text Editor: VS Code or any preferred editor.
+Local Server: Optional but recommended (e.g., Live Server extension for VS Code).
+
+Installation
+
+Clone the Repository:
+
+Download or clone this project to your local machine:git clone https://github.com/your-username/solar-system.git
+
+(Replace your-username and solar-system with your GitHub details if hosted there.)
+
+
+Navigate to the Project Directory:
+
+Open a terminal and cd into the project folder:cd solar-system
+
+
+
+
+Verify File Structure:
+
+Ensure the following files and folders are present:
+index.html: The main HTML file.
+style.css: Styles for the UI.
+script.js: JavaScript logic using Three.js.
+js/: Folder containing three.module.js and OrbitControls.js.
+textures/: Folder containing planet and starfield images (e.g., sun.jpg, mercury.jpg, etc.).
+
+
+Note: The js/ and textures/ files must be downloaded separately if not included in the repo:
+three.module.js: From https://raw.githubusercontent.com/mrdoob/three.js/r148/build/three.module.js.
+OrbitControls.js: From https://raw.githubusercontent.com/mrdoob/three.js/r148/examples/jsm/controls/OrbitControls.js.
+Textures: Download sample images or use your own (ensure filenames match textures/[planet].jpg).
+
+
+
+
+
+Running the Project Locally
+
+Serve the Site:
+
+Use a local server to avoid CORS issues with file loading:
+Install the Live Server extension in VS Code, right-click index.html, and select "Open with Live Server".
+Alternatively, use Node.js:npx serve
+
+Then open http://localhost:3000 in your browser.
+
+
+
+
+Manual Testing:
+
+Open index.html directly in a browser (not recommended due to potential security restrictions, but works for basic testing).
+
+
+Explore Features:
+
+Click planets to focus and view details in the info panel.
+Use mouse drag to rotate the view, scroll to zoom.
+Adjust sliders to modify planet orbits.
+Toggle Pause/Resume and switch themes using the buttons.
+
+
+
+Deployment
+This project is deployed using Vercel (instructions also apply to Netlify):
+
+Install Vercel CLI:
+Run npm install -g vercel in your terminal.
+
+
+Deploy:
+Navigate to your project folder: cd solar-system.
+Run vercel and follow the prompts to log in and deploy.
+Note the live URL provided (e.g., your-project-name.vercel.app).
+
+
+Alternative (Netlify):
+Push to GitHub, log into netlify.com, connect your repo, and deploy with the publish directory set to ..
+
+
+Update README: Replace the Live Link with your deployed URL.
+
+Project Structure
 solar-system/
-  index.html
-  script.js
-  style.css
-  README.md
-  textures/
-    sun.jpg
-    mercury.jpg
-    venus.jpg
-    earth.jpg
-    mars.jpg
-    jupiter.jpg
-    saturn.jpg
-    uranus.jpg
-    neptune.jpg
-    starfield.jpg
+├── index.html         # Main HTML file with canvas and UI
+├── style.css          # CSS for styling the UI and responsiveness
+├── script.js          # Three.js logic for 3D rendering and interactivity
+├── js/                # JavaScript dependencies
+│   ├── three.module.js
+│   └── OrbitControls.js
+├── textures/          # Image assets for planets and background
+│   ├── sun.jpg
+│   ├── mercury.jpg
+│   ├── venus.jpg
+│   ├── earth.jpg
+│   ├── mars.jpg
+│   ├── jupiter.jpg
+│   ├── saturn.jpg
+│   ├── uranus.jpg
+│   ├── neptune.jpg
+│   └── starfield.jpg
 
-Open index.html in any modern browser (Chrome, Firefox, Edge).
+Usage Instructions
 
-Use the on-screen controls to adjust speeds, pause/resume, or toggle theme.
-
-Hover over any planet to see its name.
-
-⚠ Note: If you face any texture loading issues while opening from file://, you can serve locally with:
-
-python -m http.server 8080
-and then visit http://localhost:8080.
+Interacting with Planets:
+Click a planet to focus the camera and view its details (e.g., "Jupiter - Largest planet (Distance: 22 AU, Size: 2 units)").
+Click the Sun to return to the overview.
 
 
-👨‍💻 Author
-Kashish Bhardwaj
+Controls:
+Sliders: Adjust "Speed" and "Inclination" for each planet’s orbit.
+Pause/Resume: Toggle animation on/off (top-right button).
+Theme Toggle: Switch between dark and light modes (below Pause).
 
+
+Mouse Controls:
+Drag to rotate the view.
+Scroll to zoom in/out.
+Hover over planets for a tooltip with the name.
+
+
+
+Development Notes
+
+Technologies:
+Three.js: For 3D rendering and WebGL.
+HTML/CSS: For structure and styling.
+JavaScript: For logic and interactivity.
+
+
+Challenges:
+Ensuring texture loading and shadow rendering.
+Dynamically positioning UI elements to avoid overlap.
+
+
+Improvements:
+Add real-scale distances and sizes (currently arbitrary units).
+Include more planetary data (e.g., moons, temperature).
+Optimize performance for larger starfields.
+
+
+
+Contributing
+Feel free to fork this repository, make improvements, and submit pull requests. Suggestions for enhancements are welcome!
+
+Acknowledgments
+
+Three.js community for the library and examples.
+Texture assets sourced from public domain or created for this project.
+
+
+Last Updated: July 21, 2025

@@ -5,12 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Solar System Simulation</title>
   <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./js/three.module.js"
+      }
+    }
+  </script>
 </head>
 <body>
-  <button class="btn" id="pauseBtn">Pause</button>
-  <button class="btn" id="themeBtn">Toggle Theme</button>
-  <div id="controls"></div>
-  <script src="https://unpkg.com/three@0.148.0/build/three.min.js"></script>
-  <script src="script.js"></script>
+  <div class="ui-container">
+    <button class="btn" id="pauseBtn">Pause</button>
+    <button class="btn" id="themeBtn">Toggle Theme</button>
+    <div id="controls"></div>
+    <div id="infoPanel" class="info-panel">
+      <h3 id="infoTitle">Solar System</h3>
+      <p id="infoText">Click a planet to focus or use mouse to rotate/zoom</p>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
